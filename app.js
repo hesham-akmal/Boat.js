@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 require('./routes/personRoutes')(app);
 require('./routes/versionRoutes')(app, config);
 
-app.listen(3000, () => {
+app.listen(8080, () => {
     /* eslint-disable */
     console.log('Server is up!');
 });
