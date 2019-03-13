@@ -14,26 +14,10 @@ const getPersonRoutes = (app) => {
             res.send(vals)
         })
         .post('/', (req, res) => {
-			
-			/*if(req.body.f == "-1")
-			{
-                (async () => {res.send(await publicIp.v4()); })();
-			}
-            else
-            {*/
                 vals = [req.body.f,req.body.r,req.body.l]
-                console.log(vals)
                 res.send('s')
-           // }
         });
 
     app.use('/vals', router);
 };
-
 module.exports = getPersonRoutes;
-
-function vals_zeroed() {
-  vals = zerovals
-}
-
-setInterval(vals_zeroed, 5000);
